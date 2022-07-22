@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  height: 70px;
+  width: 100vw;
+  background: cadetblue;
+}
+.logo{
+  width: 170px;
+  cursor: pointer;
+}
+.main_nav{
+  float: right;
+  margin-top: -40px;
+
+}
+.main_nav li{
+  display: inline-block;
+  margin-right: 30px;
+}
+.main_nav li .nav_item{
+  text-decoration: none;
+  color: #ffffff;
+}
+.main_nav li:last-child{
+  margin-right: 0;
+}
+.bar{
+  height: 35px;
+  width: 35px;
+  float: right;
+  margin-top: -40px;
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .main_nav{
+    display: none;
+  }
+  .main_nav.active{
+    background: rgb(43, 43, 43);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 110px;
+    padding: 10px 0px;
+    text-align: center;
+    display: block;
+  }
+  .main_nav li:last-child{
+    margin-right: 30px;
+  }
+  .main_nav li{
+    display: block;
+    margin-bottom: 20px;
+  }
+  .bar{
+    display: block;
+  }
+}
